@@ -65,7 +65,7 @@
       </div><span class="text-[11px] text-gray-500 mt-1 ml-1 block">HR-GPT</span>
      </div>
     </div>
-   </main><!-- Typing Indicator (hidden by default) -->
+   </main>
    <div id="typing-indicator" class="hidden px-4 pb-2">
     <div class="flex gap-3 max-w-[85%]">
      <div class="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-[#2a2a2a] to-[#1a1a1a] flex items-center justify-center border border-[#333]">
@@ -87,63 +87,63 @@
     </form>
     <p class="text-[11px] text-gray-600 text-center mt-2">Press Enter to send • Shift+Enter for new line</p>
    </footer>
-  </div><!-- Toast Notification -->
+  </div>
   <div id="toast" class="fixed top-4 left-1/2 -translate-x-1/2 bg-[#1a1a1a] border border-[#333] text-white text-sm px-4 py-2 rounded-lg opacity-0 transition-opacity duration-300 pointer-events-none z-50">
    Copied to clipboard ✓
   </div>
   <script>
-    // HR Responses Dataset (50 responses)
+
     const hrResponses = [
-      "Thank you for sharing your response 😊 Your clarity and intent are noted. Stay consistent and give your best throughout the internship. We look forward to your active participation.",
-      "Wonderful introduction! 🌟 Your enthusiasm shines through. Keep this energy going and make the most of every learning opportunity during your time with us.",
-      "Impressive response! 💼 Your professional approach is commendable. We're excited to see how you'll contribute to the team's success.",
-      "Thank you for such a thoughtful reply! 🙌 Your dedication to learning is evident. Wishing you a productive internship journey ahead.",
-      "Great to hear from you! ✨ Your positive attitude will take you far. Remember, every task is a chance to learn and grow.",
-      "Excellent introduction! 🎯 Your goals align well with our values. We're confident you'll make meaningful contributions here.",
-      "Thank you for this detailed response! 📝 Your communication skills are impressive. Keep up the great work!",
-      "What a fantastic start! 🚀 Your motivation is inspiring. We're thrilled to have you on board for this internship.",
-      "Appreciated! 👏 Your professionalism sets a great example. Looking forward to seeing your growth throughout this program.",
-      "Brilliant introduction! 💡 Your insights show great potential. Make the most of this opportunity to develop your skills.",
-      "Thank you for your response! 🌈 Your positive energy is contagious. We're sure you'll be a great addition to the team.",
-      "Well articulated! 📊 Your analytical thinking is evident. This will serve you well during your internship with us.",
-      "Great response! 🎓 Your academic background combined with your enthusiasm makes you a promising intern. Best of luck!",
-      "Thank you for sharing! 💪 Your determination to succeed is admirable. We're here to support your professional development.",
-      "Wonderful! 🌻 Your humble approach and eagerness to learn are refreshing. Welcome aboard!",
-      "Impressive introduction! 🏆 Your achievements speak volumes. We're excited to help you reach new heights.",
-      "Thank you! 😊 Your clear communication and focused goals are appreciated. Here's to a successful internship!",
-      "Excellent response! 🔥 Your passion for this field is evident. Channel this energy into every project you undertake.",
-      "Great to meet you! 🤝 Your collaborative spirit will make you a valuable team member. Looking forward to working together.",
-      "Thank you for this! ⭐ Your self-awareness and growth mindset are commendable. You're set for success!",
-      "Brilliant! 🎨 Your creative approach stands out. We can't wait to see the fresh perspectives you'll bring.",
-      "Appreciated your response! 📈 Your ambition is inspiring. Let's work together to achieve your goals.",
-      "Wonderful introduction! 🌟 Your technical skills combined with soft skills make you well-rounded. Great job!",
-      "Thank you! 💫 Your attention to detail is impressive. This quality will serve you well in your role.",
-      "Excellent! 🎯 Your structured thinking and clear objectives are noted. Wishing you all the best!",
-      "Great response! 🌱 Your willingness to step out of your comfort zone is admirable. Growth awaits!",
-      "Thank you for sharing this! 🙏 Your gratitude and positive outlook are refreshing. Welcome to the team!",
-      "Impressive! 💼 Your professional demeanor sets the right tone. We're confident in your potential.",
-      "Wonderful! 🎉 Your enthusiasm is infectious. Let's make this internship a memorable experience!",
-      "Thank you! 🌈 Your diverse interests and curiosity will help you thrive here. Best wishes!",
-      "Brilliant introduction! 📚 Your commitment to continuous learning is evident. Keep that spirit alive!",
-      "Great to have you! 🤗 Your interpersonal skills shine through your words. You'll fit right in!",
-      "Thank you for this thoughtful response! 💡 Your innovative thinking is exactly what we need. Welcome!",
-      "Excellent! 🏅 Your track record of excellence continues to impress. Looking forward to your contributions!",
-      "Wonderful response! 🌻 Your humility paired with confidence is the perfect balance. All the best!",
-      "Thank you! 🚀 Your career goals and our company values align perfectly. Exciting times ahead!",
-      "Great introduction! 💪 Your resilience and adaptability are qualities we value highly. Welcome aboard!",
-      "Appreciated! ⭐ Your genuine interest in learning and growing is what makes great interns. Best wishes!",
-      "Impressive response! 🎓 Your academic excellence and practical mindset are a great combination. Good luck!",
-      "Thank you for sharing! 🌟 Your proactive approach will open many doors. Make the most of every opportunity!",
-      "Excellent introduction! 🔥 Your energy and drive are exactly what this team needs. Welcome!",
-      "Wonderful! 📊 Your data-driven approach and attention to metrics are impressive. You'll do great!",
-      "Thank you! 🎯 Your focused and goal-oriented mindset will help you achieve great things here.",
-      "Brilliant response! 🤝 Your team spirit and collaborative nature are highly valued. Looking forward to it!",
-      "Great to meet you! 💫 Your unique perspective and fresh ideas are welcome here. Best of luck!",
-      "Thank you for this! 🌱 Your growth potential is evident. We're excited to be part of your journey!",
-      "Impressive! 🏆 Your accomplishments and future aspirations inspire us. Welcome to the team!",
-      "Wonderful introduction! 😊 Your positive attitude and strong work ethic are commendable. All the best!",
-      "Thank you! 🎨 Your creative problem-solving skills will be an asset. Looking forward to your contributions!",
-      "Excellent response! 📈 Your strategic thinking and clear vision are impressive. Wishing you success!"
+      "Thank you for sharing your response 💎 Your clarity and intent are noted 🧭 Stay consistent and give your best throughout the internship 🏁 We look forward to your active participation 🌿🎖️",
+      "Wonderful introduction! 🏵️ Your enthusiasm shines through 🔆 Keep this energy going and make the most of every learning opportunity during your time with us 🚁🧿",
+      "Impressive response! 🧳 Your professional approach is commendable 🏛️ We're excited to see how you'll contribute to the team's success 🧩🚦",
+      "Thank you for such a thoughtful reply! 🪄 Your dedication to learning is evident 📘 Wishing you a productive internship journey ahead 🗺️🛡️",
+      "Great to hear from you! 🌠 Your positive attitude will take you far 🏔️ Remember, every task is a chance to learn and grow 🌾🪴",
+      "Excellent introduction! 🧠 Your goals align well with our values 🏗️ We're confident you'll make meaningful contributions here 🧱✨",
+      "Thank you for this detailed response! 📂 Your communication skills are impressive 🎙️ Keep up the great work 🛠️🌟",
+      "What a fantastic start! 🚀 Your motivation is inspiring 🧨 We're thrilled to have you on board for this internship 🛳️🌊",
+      "Appreciated! 🫶 Your professionalism sets a great example 🏆 Looking forward to seeing your growth throughout this program 🌳📍",
+      "Brilliant introduction! 🧪 Your insights show great potential 🔭 Make the most of this opportunity to develop your skills 🧗‍♂️🌄",
+      "Thank you for your response! 🎐 Your positive energy is contagious ⚡ We're sure you'll be a great addition to the team 🧿🧑‍💼",
+      "Well articulated! 📐 Your analytical thinking is evident 🧮 This will serve you well during your internship with us 🗃️🔐",
+      "Great response! 🧑‍🎓 Your academic background combined with your enthusiasm makes you a promising intern 📖 Best of luck 🍀🎯",
+      "Thank you for sharing! 🪙 Your determination to succeed is admirable 🧗 We're here to support your professional development 🏢📊",
+      "Wonderful! 🌺 Your humble approach and eagerness to learn are refreshing 🍃 Welcome aboard 🚢🛟",
+      "Impressive introduction! 🥇 Your achievements speak volumes 📜 We're excited to help you reach new heights 🏔️🔝",
+      "Thank you! 🧃 Your clear communication and focused goals are appreciated 🎯 Here's to a successful internship 🥂📅",
+      "Excellent response! 🧨 Your passion for this field is evident 🔥 Channel this energy into every project you undertake 🛠️🚧",
+      "Great to meet you! 🧑‍🤝‍🧑 Your collaborative spirit will make you a valuable team member 🏘️ Looking forward to working together 📌🤗",
+      "Thank you for this! 🧵 Your self-awareness and growth mindset are commendable 🪞 You're set for success 🏹🌟",
+      "Brilliant! 🖌️ Your creative approach stands out 🎭 We can't wait to see the fresh perspectives you'll bring 🧃🌈",
+      "Appreciated your response! 🧭 Your ambition is inspiring 🏹 Let's work together to achieve your goals 🧑‍💻📌",
+      "Wonderful introduction! 🪁 Your technical skills combined with soft skills make you well-rounded 🧰 Great job 🏅🌤️",
+      "Thank you! 🧊 Your attention to detail is impressive 🔎 This quality will serve you well in your role 🧾📈",
+      "Excellent! 🧿 Your structured thinking and clear objectives are noted 📊 Wishing you all the best 🏁🌅",
+      "Great response! 🌱 Your willingness to step out of your comfort zone is admirable 🪂 Growth awaits 🌄🔓",
+      "Thank you for sharing this! 🪔 Your gratitude and positive outlook are refreshing 🌼 Welcome to the team 🧑‍💼🏢",
+      "Impressive! 🧤 Your professional demeanor sets the right tone 🎼 We're confident in your potential 🏗️🔷",
+      "Wonderful! 🎊 Your enthusiasm is infectious 🧡 Let's make this internship a memorable experience 🎬🌟",
+      "Thank you! 🪐 Your diverse interests and curiosity will help you thrive here 🌍 Best wishes 🧭🍃",
+      "Brilliant introduction! 📚 Your commitment to continuous learning is evident 🧠 Keep that spirit alive 🕯️🌠",
+      "Great to have you! 🤗 Your interpersonal skills shine through your words 💬 You'll fit right in 🧩🏡",
+      "Thank you for this thoughtful response! 🧠 Your innovative thinking is exactly what we need 💡 Welcome 🏁🚪",
+      "Excellent! 🥈 Your track record of excellence continues to impress 📈 Looking forward to your contributions 🗂️🌟",
+      "Wonderful response! 🌷 Your humility paired with confidence is the perfect balance ⚖️ All the best 🛤️🌄",
+      "Thank you! 🚄 Your career goals and our company values align perfectly 🧩 Exciting times ahead 🎆📆",
+      "Great introduction! 🛡️ Your resilience and adaptability are qualities we value highly 🌊 Welcome aboard 🚢⚓",
+      "Appreciated! 🌟 Your genuine interest in learning and growing is what makes great interns 🌿 Best wishes 🧭🎓",
+      "Impressive response! 🧑‍🏫 Your academic excellence and practical mindset are a great combination 📊 Good luck 🍀📘",
+      "Thank you for sharing! 🧑‍💻 Your proactive approach will open many doors 🚪 Make the most of every opportunity 🗝️🏆",
+      "Excellent introduction! ⚡ Your energy and drive are exactly what this team needs 🚀 Welcome 🏢🎯",
+      "Wonderful! 📊 Your data-driven approach and attention to metrics are impressive 📈 You'll do great 🏁🧮",
+      "Thank you! 🎯 Your focused and goal-oriented mindset will help you achieve great things here 🧭🌟",
+      "Brilliant response! 🤝 Your team spirit and collaborative nature are highly valued 🏘️ Looking forward to it 🗓️✨",
+      "Great to meet you! 🌌 Your unique perspective and fresh ideas are welcome here 💡 Best of luck 🍀🛤️",
+      "Thank you for this! 🌿 Your growth potential is evident 🌱 We're excited to be part of your journey 🛣️🌄",
+      "Impressive! 🏅 Your accomplishments and future aspirations inspire us 📜 Welcome to the team 🏢🎊",
+      "Wonderful introduction! 🌞 Your positive attitude and strong work ethic are commendable 🛠️ All the best 🏁🌟",
+      "Thank you! 🎨 Your creative problem-solving skills will be an asset 🧠 Looking forward to your contributions 📂🚀",
+      "Excellent response! 📈 Your strategic thinking and clear vision are impressive 🧭 Wishing you success 🏆🌠"
     ];
 
     // Track last 10 used responses
